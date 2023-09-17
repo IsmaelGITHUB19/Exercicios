@@ -1,0 +1,183 @@
+<!--Exercicio 3-->
+<!--<script>
+let celsius = 'Celsius'
+let fh = 'Fahrenheit'
+
+let escolha = prompt("Escolha entre Celsius ou Fahrenheit")
+
+    if( escolha === celsius)
+    {   
+       let graus = parseFloat(prompt('Digite a temperatura'))
+       let resultado = graus * 1.8 + 32
+       console.info(`${graus} Graus ficou convertido para ${resultado} em Fahrenheit`)
+    }
+   else
+    {
+        let grausf = parseFloat(prompt('Digite a temperatura'))
+        let resultadof = (grausf-32)/1.8
+        console.info(`${grausf} Graus ficou convertido para ${resultadof} em Fahrenheit`)
+    }
+</script>-->
+
+
+
+
+
+
+<!---
+<script>
+     function generateRandomPassword(length) {
+  const uppercaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const lowercaseLetters = 'abcdefghijklmnopqrstuvwxyz';
+  const numbers = '0123456789';
+  const specialCharacters = '!@#$%^&*()_+[]{}|;:,.<>?';
+
+  const allCharacters = uppercaseLetters + lowercaseLetters + numbers + specialCharacters;
+  let password = '';
+
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * allCharacters.length);
+    password += allCharacters.charAt(randomIndex);
+  }
+
+  return password;
+}
+
+const desiredLength = parseInt(prompt("Digite o tamanho desejado da senha:"));
+
+if (isNaN(desiredLength) || desiredLength <= 0) {
+  console.log("Por favor, insira um tamanho válido.");
+} else {
+  const randomPassword = generateRandomPassword(desiredLength);
+  console.log("Senha gerada:", randomPassword);
+}
+</script>-->
+<!--
+<script>
+    function countVowels(word) {
+  const vowels = 'AEIOUaeiou';
+  let vowelCount = 0;
+
+  for (let i = 0; i < word.length; i++) {
+    if (vowels.includes(word[i])) {
+      vowelCount++;
+    }
+  }
+
+  return vowelCount;
+}
+
+const userInput = prompt("Digite uma palavra:");
+const numVowels = countVowels(userInput);
+
+console.log(`A palavra "${userInput}" possui ${numVowels} vogais.`);
+
+</script>-->
+
+
+
+
+<!--
+<script>
+    let pessoa = {
+        nome : 'Ismael',
+        idade: 19,
+        profissao: 'Estudante'
+    }
+    console.log('Nome da pessoa ', pessoa.nome)
+
+</script>
+-->
+<!--
+<script>
+    let number1 = parseFloat(prompt('Digite o primeiro numero'))
+    let number2 = parseFloat(prompt('Digite o segundo numero'))
+    let number3 = parseFloat(prompt('Digite o terceiro numero'))
+    let number4 = parseFloat(prompt('Digite o quarto numero'))
+    let number5 = parseFloat(prompt('Digite o quinto numero'))
+
+    let soma = (number1+number2+number3+number4+number5)/5
+    console.log("Esta eh a media dos numeros ",+soma)
+
+
+</script>
+-->
+<!--
+<script>
+
+const listaDeCompras = [];
+
+
+function adicionarItem() {
+  const item = prompt("Digite o item que deseja adicionar à lista de compras:");
+  if (item) {
+    listaDeCompras.push(item);
+    console.log(`"${item}" foi adicionado à lista de compras.`);
+  } else {
+    console.log("Nenhum item foi adicionado à lista.");
+  }
+}
+
+
+function exibirLista() {
+  if (listaDeCompras.length === 0) {
+    console.log("A lista de compras está vazia.");
+  } else {
+    console.log("Lista de compras:");
+    listaDeCompras.forEach((item, index) => {
+      console.log(`${index + 1}. ${item}`);
+    });
+  }
+}
+
+let continuar = true;
+while (continuar) {
+  const opcao = prompt("Escolha uma opção:\n1. Adicionar item à lista\n2. Exibir lista de compras\n3. Finalizar");
+  
+  switch (opcao) {
+    case "1":
+      adicionarItem();
+      break;
+    case "2":
+      exibirLista();
+      break;
+    case "3":
+      continuar = false;
+      console.log("Programa finalizado.");
+      break;
+    default:
+      console.log("Opção inválida.");
+      break;
+  }
+}
+
+</script>
+-->
+<!--
+<script>
+    function verificaSenha(senha) {
+  const temLetraMaiuscula = /[A-Z]/.test(senha);
+  const temNumero = /[0-9]/.test(senha);
+  const temCaractereEspecial = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\/\-=|]/.test(senha);
+
+  return temLetraMaiuscula && temNumero && temCaractereEspecial;
+}
+
+function pedirSenha() {
+  let senha;
+
+  do {
+    senha = prompt("Digite uma senha que contenha pelo menos uma letra maiúscula, um número e um caractere especial:");
+
+    if (!verificaSenha(senha)) {
+      alert("A senha não atende aos critérios de segurança. Tente novamente.");
+    }
+  } while (!verificaSenha(senha));
+
+  alert("Senha válida! ");
+}
+
+pedirSenha();
+
+</script>
+-->
